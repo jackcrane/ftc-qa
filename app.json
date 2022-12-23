@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ftc-qa-sc",
-    "slug": "ftc-qa-sc",
-    "version": "1.0.0",
+    "name": "FTC QA",
+    "slug": "ftc-qa",
+    "version": "0.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,20 +14,25 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jackcrane.ftcqa"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.jackcrane.ftcqa"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9173d65-635f-44e3-9c47-35ebd1b45125"
+      }
     }
   }
 }
