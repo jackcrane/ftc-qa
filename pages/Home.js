@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ActivityIndicator } from 'react-native';
+import { Flag } from '../components/Flag';
 import { SearchBar } from '../components/SearchBar';
 import { Container, Text, Card, Flex, Utilities } from '../components/styled';
 import Page from '../Templates/Page';
@@ -19,6 +20,7 @@ const Home = (props) => {
           setSearchTime={(time) => setSearchTime(time)}
         />
       }>
+      <Flag />
       <Text.Body>
         Found {results.length} results in {searchTime} ms
       </Text.Body>

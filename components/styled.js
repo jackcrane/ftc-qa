@@ -221,12 +221,13 @@ const TouchLink = styled.TouchableOpacity`
 `;
 
 export const Flag = {
-  Flag: styled.View`
+  Flag: styled.TouchableOpacity`
     border-color: ${defaults.colors.red};
-    border-width: 1;
-    border-radius: 10;
-    background-color: '#fddcdd';
-    padding: 10;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #fddcdd;
+    padding: 10px;
+    margin-bottom: 10px;
   `,
   Text: styled.Text`
     font-family: ${defaults.text.fontFamily};
